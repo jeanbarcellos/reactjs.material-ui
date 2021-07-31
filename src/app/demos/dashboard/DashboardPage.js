@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import clsx from 'clsx'
 import { makeStyles } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
@@ -55,13 +55,13 @@ const useStyles = makeStyles(theme => ({
   },
   container: {
     paddingTop: theme.spacing(4),
-    paddingBottom: theme.spacing(4)
+    paddingBottom: theme.spacing(6)
   }
 }))
 
 const DashboardPage = () => {
   const classes = useStyles()
-  const [open, setOpen] = React.useState(true)
+  const [open, setOpen] = useState(true)
 
   const handleDrawerOpen = () => {
     setOpen(true)
@@ -100,8 +100,8 @@ const DashboardPage = () => {
         <div className={classes.appBarSpacer} />
         <Container maxWidth='lg' className={classes.container}>
           <Main />
-          <Footer />
         </Container>
+        <Footer />
       </main>
     </div>
   )

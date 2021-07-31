@@ -1,11 +1,26 @@
 import Typography from '@material-ui/core/Typography'
 import Link from '@material-ui/core/Link'
-import Box from '@material-ui/core/Box'
+import { makeStyles } from '@material-ui/core'
+import { drawerWidth } from './store'
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    position: 'fixed',
+    width: `calc(100% - ${drawerWidth}px)`,
+    // height: '40px',
+    background: '#FFFFFF',
+    bottom: 0,
+    borderTop: '1px solid rgba(0, 0, 0, 0.12)',
+    textAlign: 'center',
+    padding: '5px'
+  }
+}))
 
 const Footer = () => {
+  const classes = useStyles()
   return (
-    <Box pt={4}>
-      <Typography variant='body2' color='textSecondary' align='center'>
+    <div className={classes.root}>
+      <Typography variant='div' color='textSecondary' align='center'>
         {'Copyright © '}
         <Link color='inherit' href='https://material-ui.com/'>
           Your Website
@@ -13,7 +28,7 @@ const Footer = () => {
         {new Date().getFullYear()}
         {'.'}
       </Typography>
-    </Box>
+    </div>
   )
 }
 export default Footer

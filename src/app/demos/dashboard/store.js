@@ -81,3 +81,5 @@ export const deposits = {
   value: '$3,024.00',
   date: '15 March, 2019'
 }
+
+export const drawerWidth = 240

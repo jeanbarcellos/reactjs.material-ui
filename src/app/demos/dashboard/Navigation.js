@@ -11,9 +11,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon'
 import ListItemText from '@material-ui/core/ListItemText'
 import ListSubheader from '@material-ui/core/ListSubheader'
 import Icon from '@material-ui/core/Icon'
-import { navPrimary, navSecondary } from './store'
-
-const drawerWidth = 240
+import { navPrimary, navSecondary, drawerWidth } from './store'
 
 const useStyles = makeStyles(theme => ({
   toolbar: {
