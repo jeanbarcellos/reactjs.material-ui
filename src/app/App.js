@@ -1,11 +1,11 @@
 import { ThemeProvider } from '@material-ui/core/styles'
 import theme from './config/theme'
-import ThemeDemo from './demos/ThemeDemo'
+import DashboardPage from './demos/dashboard/DashboardPage'
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <ThemeDemo />
+      <DashboardPage />
     </ThemeProvider>
   )
 }
