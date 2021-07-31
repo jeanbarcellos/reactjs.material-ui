@@ -1,10 +1,12 @@
-import PageDemo from "./demos/PageDemo";
+import {ThemeProvider} from "@material-ui/core/styles";
+import theme from "./config/theme";
+import ThemeDemo from "./demos/ThemeDemo";
 
-function App() {
+const App = () => {
   return (
-    <div className="app">
-      <PageDemo />
-    </div>
+    <ThemeProvider theme={theme}>
+      <ThemeDemo />
+    </ThemeProvider>
   );
 }
 
