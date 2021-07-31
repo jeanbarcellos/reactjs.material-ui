@@ -1,8 +1,11 @@
+import { Button } from "@material-ui/core";
+
 function App() {
   return (
     <div className="app">
-     <h1>Olá mundo!</h1>
-     <p>By @jeanbarcellos</p>
+      <Button variant="contained" color="primary">
+        Hello World
+      </Button>
     </div>
   );
 }
