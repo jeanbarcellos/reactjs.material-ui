@@ -1,11 +1,9 @@
-import { Button } from "@material-ui/core";
+import PageDemo from "./demos/PageDemo";
 
 function App() {
   return (
     <div className="app">
-      <Button variant="contained" color="primary">
-        Hello World
-      </Button>
+      <PageDemo />
     </div>
   );
 }
