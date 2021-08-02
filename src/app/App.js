@@ -1,11 +1,13 @@
 import { ThemeProvider } from '@material-ui/core/styles'
 import theme from './config/theme'
-import DashboardPage from './demos/dashboard/DashboardPage'
+import LabDemo from './demos/LabDemo'
+// import DashboardPage from './demos/dashboard/DashboardPage'
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <DashboardPage />
+      {/* <DashboardPage /> */}
+      <LabDemo />
     </ThemeProvider>
   )
 }
